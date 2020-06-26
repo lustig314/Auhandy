@@ -1,0 +1,66 @@
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+	font-weight: 400;
+	font-family: 'PT Sans', Arial, sans-serif;
+	line-height: 24px;
+	color: #000000;
+  font-size: 13px;
+}
+
+*, *::before, *::after { 
+  box-sizing: inherit; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  background-color: #f3f7f8;
+  min-height: 320px;
+  margin-bottom: 60px;
+}
+
+
+
