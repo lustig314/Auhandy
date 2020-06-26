@@ -5,10 +5,10 @@ html {
 
 body {
 	font-weight: 400;
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: 'Lato', sans-serif;
 	line-height: 24px;
-	color: #000000;
-  font-size: 13px;
+	color: #666666;
+  font-size: 15px;
 }
 
 *, *::before, *::after { 
