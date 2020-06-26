@@ -15,12 +15,6 @@ body {
   box-sizing: inherit; 
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -56,11 +50,13 @@ input[type='radio'].visually-hidden {
   overflow: hidden;
 }
 
-.header {
-  background-color: #f3f7f8;
-  min-height: 320px;
-  margin-bottom: 60px;
+.header__top {
+  background-color: #f2f2f2;
+  padding: 15px 0px;
 }
 
+.header__icons i {
+  margin-left: 10px;
+}
 
 
