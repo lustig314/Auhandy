@@ -1,8 +1,4 @@
 
-html {
-  box-sizing: border-box;
-}
-
 body {
 	font-weight: 400;
 	font-family: 'Lato', sans-serif;
@@ -11,8 +7,11 @@ body {
   font-size: 15px;
 }
 
-*, *::before, *::after { 
-  box-sizing: inherit; 
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .visually-hidden {
@@ -30,9 +29,8 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+a:hover {
+  text-decoration: none;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -55,8 +53,229 @@ input[type='radio'].visually-hidden {
   padding: 15px 0px;
 }
 
-.header__icons i {
-  margin-left: 10px;
+.header__icons {
+  display: flex;
+  margin-left: auto;
+  align-self: center;
+  justify-content: flex-end;
 }
 
+.header__icons i {
+  margin-left: 15px;
+  color: #666666;
+}
+
+.header__menu {
+  padding: 35px 0 15px;
+}
+
+.logo {
+  float: left;
+  margin-right: 10px;
+}
+
+.logo-title h2 {
+  font-weight: 900;
+	font-family: 'Lato', sans-serif;
+	line-height: 22px;
+	color: #333333;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.header__descr {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.menu-bar {
+  color: #393939;
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+.menu-bar__item {
+  margin-left: 34px;
+}
+
+.menu-bar__item a{
+  color: #393939;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.header__inner {
+  background-color: #2f2d2d;
+  background-image: url('../img/header-bg.jpg');
+  padding: 170px 0;
+}
+
+.header__title {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 40px;
+  margin: 0 0 20px;
+}
+
+.header__cta{
+  padding: 0;
+  margin-top: 25px;
+}
+
+.header__text {
+  color: #cccccc;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.button {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #ffb619;
+  padding: 17px 38px;
+  border: 2px solid #ffb619;
+  transition: 0.3s;
+}
+
+.button-quote {
+  margin-left: 10px;
+  background: none;
+  border: 2px solid #ffffff;
+}
+
+.button-learn:hover,
+.button-quote:hover {
+  background-color: #d69d23;
+  border: 2px solid #d69d23;
+}
+
+.experience {
+  background-color: #e3e3e3;
+  background-image: url('../img/experience-bg.jpg');
+  padding: 50px 0;
+}
+
+.experience__title {
+  color: #333333;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 0;
+}
+
+.experience__phone {
+  background-color: #ffb619;
+  padding: 15px 25px 15px 50px;
+  color: #ffffff;
+  font-weight: 900;
+  line-height: 22px;
+  font-size: 18px;
+  position: relative;
+}
+
+.experience__phone:hover {
+  color: #ffffff;
+}
+
+.experience__phone::before {
+  content: '';
+  background-image: url('../img/phone-icon.png');
+  width: 17px;
+  height: 26px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20px;
+}
+
+.advantage {
+  padding: 80px 0 120px;
+}
+
+.advantage__main {
+  padding-left: 0;
+  margin-top: 40px;
+}
+
+.sect-title {
+  color: #333333;
+  font-weight: 900;
+  line-height: 22px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.line {
+  width: 60px;
+  height: 3px;
+  background-color: #1c3e9b;
+  margin-bottom: 20px;
+}
+
+.advantage__text {
+  margin-bottom: 40px;
+}
+
+.advantage-list__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333333;
+  position: relative;
+}
+
+.advantage-list__item {
+  margin-bottom: 35px;
+}
+
+.advantage-list_left .advantage-list__item:nth-of-type(1)::before {
+  content: '';
+  background-image: url('../img/adv-icon1.png');
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -55px;
+}
+
+.advantage-list_left .advantage-list__item:nth-of-type(2)::before {
+  content: '';
+  background-image: url('../img/adv-icon2.png');
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -55px;
+}
+
+.advantage-list_right .advantage-list__item:nth-of-type(1)::before {
+  content: '';
+  background-image: url('../img/adv-icon3.png');
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -55px;
+}
+
+.advantage-list_right .advantage-list__item:nth-of-type(2)::before {
+  content: '';
+  background-image: url('../img/adv-icon4.png');
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -55px;
+}
+
+.advantage-list_right {
+  margin-left: 55px;
+}
 
