@@ -151,8 +151,7 @@ input[type='radio'].visually-hidden {
   border: 2px solid #ffffff;
 }
 
-.button-learn:hover,
-.button-quote:hover {
+.button:hover {
   background-color: #d69d23;
   border: 2px solid #d69d23;
 }
@@ -209,16 +208,24 @@ input[type='radio'].visually-hidden {
   font-weight: 900;
   line-height: 22px;
   font-size: 30px;
-  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-.line {
+.advantage__sect-title {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.advantage__sect-title::after {
+  content: '';
   width: 60px;
   height: 3px;
   background-color: #1c3e9b;
-  margin-bottom: 20px;
+  position: absolute;
+  left: 0;
+  bottom: -23px;
 }
+
 
 .advantage__text {
   margin-bottom: 40px;
@@ -279,3 +286,93 @@ input[type='radio'].visually-hidden {
   margin-left: 55px;
 }
 
+.services {
+  background-color: #303030;
+  background-image: url('../img/services-bg.jpg');
+  padding: 75px 0 100px;
+}
+
+.services__sect-title {
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.services__sect-title::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 525px;
+  bottom: -23px;
+}
+
+.services__item {
+  border: solid 4px #1c3e9b;
+  height: 265px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.services__item:hover {
+  background-color: #1c3e9b;
+  cursor: pointer;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.services-descr {
+  text-align: center;
+  color: #cccccc;
+}
+
+.services__button {
+  padding: 17px 27px;
+}
+
+.services__inner {
+  margin-bottom: 65px;
+}
+
+.projects {
+  padding: 75px 0 100px;
+}
+
+.projects__sect-title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.projects__sect-title::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: #1c3e9b;
+  position: absolute;
+  left: 525px;
+  bottom: -23px;
+}
+
+.projects-menu__item a{
+  margin-left: 25px;
+  text-transform: uppercase;
+  color: #666666;
+  font-weight: 700;
+}
+
+.projects-menu__item_select a{
+  color: #ffb619;
+  cursor: default;
+}
