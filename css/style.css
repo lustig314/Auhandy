@@ -441,3 +441,46 @@ input[type='radio'].visually-hidden {
 .projects__button {
   padding: 17px 32px;
 }
+
+.problems {
+  background-color: #444444;
+  background-image: url('../img/problems-bg.jpg');
+  padding: 180px 0 225px;
+}
+
+.problems__ask {
+  margin-bottom: 40px;
+}
+
+.problems__title {
+  font-weight: 700;
+  line-height: 52px;
+	color: #f2f2f2;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.problems__phone {
+  color: #ffffff;
+  line-height: 18px;
+  font-weight: 900;
+  font-size: 25px;
+  background-color: #ffb619;
+  padding: 10px 35px 10px 50px;
+  position: relative;
+}
+
+.problems__phone::before {
+  content: '';
+  background-image: url('../img/phone-icon.png');
+  width: 17px;
+  height: 26px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+.problems__phone:hover {
+  color: #ffffff;
+}
