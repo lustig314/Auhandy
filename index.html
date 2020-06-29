@@ -14,25 +14,26 @@
         <div class="header__top">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6">We make your home more quality.</div>
-              <div class="col-sm-2 header__icons">
+              <div class="col-7">We make your home more quality.</div>
+              <div class="col-3 d-flex ml-auto justify-content-end header__icons ">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-google-plus-g"></i></a>
                 <a href="#"><i class="fab fa-behance"></i></a>
               </div>
+
             </div>
           </div>
         </div>
         <div class="header__menu">
           <div class="container">
             <div class="row">
-              <div class="col-md-3 header__logo">
+              <div class="col-7 col-lg-3 header__logo">
                 <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
                 <a href="#" class="logo-title"><h2 >Auhandy</h2></a>
                 <p class="header__descr">We repair everything.</p>
               </div>
-              <div class="col-md-9 ml-auto">
+              <div class="col-md-8  menu-column">
                 <nav>
                   <ul class="menu-bar">
                     <li class="menu-bar__item"><a href="#">Home</a></li>
@@ -45,16 +46,21 @@
                   </ul>         
                 </nav>                              
               </div>
+              <div class="col-12">
+                <div class="bars">
+                  <i class="fas fa-bars"></i>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="header__inner">
           <div class="container">
-            <div class="row justify-content-around">
-              <div class="col-xl-4">
+            <div class="row justify-content-lg-around ">
+              <div class="col-xl-4 d-flex justify-content-center header__bunny">
                 <img src="img/header-image.png" alt="" width="371" height="363" class="bunny-img">
               </div>
-              <div class="col-xl-7 header__cta">
+              <div class="col-xl-7 col-sm-12 header__cta">
                 <h1 class="header__title">Expert Handyman & Remodeling</h1>
                 <p class="header__text">Integer consectetur dapibus nisi, et faucibus augue lobortis ut. Proin quis porttitor sem. Donec ultrices felis quis tincidunt</p>
                 <button class="button button-learn">Learn More</button>
@@ -68,10 +74,10 @@
     <section class="experience">
       <div class="container">
         <div class="row">
-          <div class="col-xl-6 align-self-center">
+          <div class="col-12 col-md-8 align-self-center">
             <h3 class="experience__title">We have 13 years of experience in Auhandy.</h3>
           </div>
-          <div class="col-xl-3 ml-auto d-flex justify-content-end">
+          <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
             <a class="experience__phone" href="tel:+1235688967">+1 23 568 8967</a>
           </div>
         </div>
@@ -81,35 +87,41 @@
     <section class="advantage">
       <div class="container">
         <div class="row justify-content-between">
-          <div class="col-xl-5">
-            <img src="img/exp-bunny.jpg" width="470" height="451" alt="">
+          <div class="col-xl-5 col-md-12 d-flex flex-column align-items-center">
+            <img src="img/exp-bunny.jpg" width="470" height="451" alt="" class="advantage__bunny">
           </div>
-          <div class="col-xl-6 advantage__main">
+          <div class="col-xl-6 col-md-12 advantage__main">
             <h2 class="sect-title advantage__sect-title">Why Choose Us</h2>
             <div class="line"></div>
             <p class="advantage__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec ligula temp cursus justo eu, blandit quam. Sed viverra, quam ut maximus porta, lorem bibendum metus, et eleifend mi nunc ac arcu facilisis lorem urna eu quam.</p>
-            <div class="row justify-content-end">
-              <div class="col-xl-5 advantage-list advantage-list_left">
+            <div class="row advantage__lists">
+              <div class="col-xl-5 offset-md-1 col-md-5 advantage-list">
                 <div class="advantage-list__item">
                   <p class="advantage-list__title">Easy To Customize.</p>
                   <p class="advantage-list__descr">Mauris efficitur mi eu nisi venenatis vestibulum sit tellus.</p>
                 </div>
+              </div>  
+              <div class="col-xl-5 offset-md-1 col-md-5 advantage-list">
+                <div class="advantage-list__item">
+                  <p class="advantage-list__title">24/7 Support Service</p>
+                  <p class="advantage-list__descr">Aliquam vel felis quis ipsum fermentum sollicitudin eget.</p>
+                </div>
+              </div>
+              <div class="col-xl-5 offset-md-1 col-md-5 advantage-list">
                 <div class="advantage-list__item">
                   <p class="advantage-list__title">Gift For Loyal Customers</p>
                   <p class="advantage-list__descr">Ut imperdiet libero sed tel pretium convallis quis lectus.</p>
                 </div>
               </div>
-              <div class="col-xl-5 advantage-list advantage-list_right">
-                <div class="advantage-list__item">
-                  <p class="advantage-list__title">24/7 Support Service</p>
-                  <p class="advantage-list__descr">Aliquam vel felis quis ipsum fermentum sollicitudin eget.</p>
-                </div>
+              <div class="col-xl-5 offset-md-1 col-md-5 advantage-list">
                 <div class="advantage-list__item">
                   <p class="advantage-list__title">Favorite Customers</p>
                   <p class="advantage-list__descr">Lorem ipsum dolor sit a consectetur adipiscing.</p>
                 </div>
               </div>
             </div>
+
+    
           </div>
         </div>
       </div>
@@ -121,28 +133,28 @@
           <div class="col-12">
             <h2 class="sect-title services__sect-title">Our Services</h2>
           </div>
-          <div class="col-xl-3">
+          <div class="col-sm-6 col-xl-3">
             <div class="services__item">
               <img src="img/gears.png" alt="" class="services__icon" width="50" height="58"> 
               <p class="services-title">Engine Repairs</p>
               <p class="services-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>  
           </div>
-          <div class="col-xl-3">
+          <div class="col-sm-6 col-xl-3">
             <div class="services__item">
               <img src="img/light-bolt.png" alt="" class="services__icon" width="37" height="58">
               <p class="services-title">Electrical</p>
               <p class="services-descr">Donec malesuada, purus a viverra sodales leo purus lobortis</p>
             </div>
           </div>
-          <div class="col-xl-3">
+          <div class="col-sm-6 col-xl-3">
             <div class="services__item">
               <img src="img/pipe.png" alt="" class="services__icon" width="79" height="52">
               <p class="services-title">Plumbing</p>
               <p class="services-descr">Praesent dignissim mattis mauris. Sed finibus elementu.</p>
             </div>
           </div>
-          <div class="col-xl-3">
+          <div class="col-sm-6 col-xl-3">
             <div class="services__item">
               <img src="img/wrench.png" alt="" class="services__icon" width="50" height="50">
               <p class="services-title">Repair House</p>
@@ -164,8 +176,8 @@
           <div class="col-12">
             <h2 class="sect-title projects__sect-title">Our Projects</h2>
           </div>
-          <div class="col-xl-12">
-            <ul class="projects-menu d-flex justify-content-center">
+          <div class="col-12">
+            <ul class="projects-menu">
               <li class="projects-menu__item projects-menu__item_select"><a href="#">All</a></li>
               <li class="projects-menu__item"><a href="#">Engine Repair</a></li>
               <li class="projects-menu__item"><a href="#">Electrical</a></li>
@@ -222,8 +234,10 @@
         </div>
         <div class="row">
           <div class="col-xl-5">
-            <img src="img/map.jpg" width="470" height="420" alt="map">
+            <img src="img/map.jpg" width="470" height="420" alt="map" class="location__map">
+            <h2 class="sect-title adapt-title">Get A Quote</h2>
           </div>
+          
           <div class="col-xl-6 offset-xl-1">
             <div class="row form-inner">
               <div class="col-xl-6">
@@ -265,16 +279,16 @@
     <section class="brands">
       <div class="container">
         <div class="row justify-content-around brands-list">
-          <div class="col-xl-2 d-flex flex-column align-items-center brands-list__item">
+          <div class="col-sm-6 col-md-2 d-flex flex-column align-items-center brands-list__item">
             <img src="img/brand-1.png" alt="">
           </div>
-          <div class="col-xl-2 d-flex flex-column align-items-center brands-list__item">
+          <div class="col-sm-6 col-md-2 d-flex flex-column align-items-center brands-list__item">
             <img src="img/brand-2.png" alt="">
           </div>
-          <div class="col-xl-2 d-flex flex-column align-items-center brands-list__item">
+          <div class="col-sm-6 col-md-2 d-flex flex-column align-items-center brands-list__item">
             <img src="img/brand-3.png" alt="">
           </div>
-          <div class="col-xl-2 d-flex flex-column align-items-center brands-list__item">
+          <div class="col-sm-6 col-md-2 d-flex flex-column align-items-center brands-list__item">
             <img src="img/brand-4.png" alt="">
           </div>
         </div>
