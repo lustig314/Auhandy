@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="css/style.css">
   </head>      
   <body>
+
     <header class="header">
         <div class="header__top">
           <div class="container">
             <div class="row">
-              <div class="col-xl-3">We make your home more quality.</div>
-              <div class="col-xl-2 header__icons">
+              <div class="col-sm-6">We make your home more quality.</div>
+              <div class="col-sm-2 header__icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-google-plus-g"></i></a>
@@ -26,13 +27,14 @@
         <div class="header__menu">
           <div class="container">
             <div class="row">
-              <div class="col-xl-3 header__logo">
+              <div class="col-md-3 header__logo">
                 <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
                 <a href="#" class="logo-title"><h2 >Auhandy</h2></a>
                 <p class="header__descr">We repair everything.</p>
               </div>
-              <div class="col-xl-7 ml-auto">
-                <ul class="menu-bar">
+              <div class="col-md-9 ml-auto">
+                <nav>
+                  <ul class="menu-bar">
                     <li class="menu-bar__item"><a href="#">Home</a></li>
                     <li class="menu-bar__item"><a href="#">Services</a></li>
                     <li class="menu-bar__item"><a href="#">Projects</a></li>
@@ -40,7 +42,8 @@
                     <li class="menu-bar__item"><a href="#">Blog</a></li>
                     <li class="menu-bar__item"><a href="#">Contact</a></li>
                     <li class="menu-bar__item"><i class="fas fa-search"></i></li>
-                </ul>                                       
+                  </ul>         
+                </nav>                              
               </div>
             </div>
           </div>
@@ -61,6 +64,7 @@
           </div>
         </div>
     </header>
+
     <section class="experience">
       <div class="container">
         <div class="row">
@@ -73,6 +77,7 @@
         </div>
       </div>
     </section>
+
     <section class="advantage">
       <div class="container">
         <div class="row justify-content-between">
@@ -109,6 +114,7 @@
         </div>
       </div>
     </section>
+
     <section class="services">
       <div class="container">
         <div class="row services__inner">
@@ -151,6 +157,7 @@
         </div>
       </div>
     </section>
+
     <section class="projects">
       <div class="container">
         <div class="row">
@@ -187,6 +194,7 @@
         </div>                              
       </div>
     </section>
+
     <section class="problems">
       <div class="container">
         <div class="row problems__ask">
@@ -201,45 +209,59 @@
         </div>
       </div>
     </section>
+
     <section class="location">
       <div class="container">
         <div class="row">
           <div class="col-xl-3">
             <h2 class="sect-title location__title">Our Location</h2>
-            <div class="row">
-              <div class="col-xl-5">
-                <img src="img/map.jpg" width="470" height="420" alt="map">
+          </div>
+          <div class="col-xl-3 offset-xl-3">
+            <h2 class="sect-title form__title">Get A Quote</h2>  
+          </div>    
+        </div>
+        <div class="row">
+          <div class="col-xl-5">
+            <img src="img/map.jpg" width="470" height="420" alt="map">
+          </div>
+          <div class="col-xl-6 offset-xl-1">
+            <div class="row form-inner">
+              <div class="col-xl-6">
+                <div class="submit-form">
+                  <input type="text" name="name" value="" placeholder="Your Name" class="name-input">
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="submit-form">
+                  <input type="email" name="e-mail" value="" placeholder="Your Email" class="email-input">
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="submit-form">
+                  <input type="text" name="subj" value="" placeholder="Your Subjects" class="name-input">
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="submit-form">
+                  <input type="tel" name="phone" value="" placeholder="Your Phone Number" class="phone-input">
+                </div>
+              </div>
+              <div class="col-xl-12">
+                <div class="submit-form">
+                  <textarea name="description" placeholder="Description Services Needed" class="textarea-input"></textarea>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="submit-form">
+                  <button class="button submit-form__button">Submit</button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-3 offset-xl-3 form-left">
-            <h2 class="sect-title form__title">Get A Quote</h2>
-              <div class="submit-form">
-                <input type="text" name="name" value="" placeholder="Your Name" class="name-input">
-              </div>
-              <div class="submit-form">
-                <input type="text" name="subj" value="" placeholder="Your Subjects" class="name-input">
-              </div>
-              <div class="submit-form">
-                <textarea name="description" placeholder="Description Services Needed" class="textarea-input"></textarea>
-              </div>
-              <div class="submit-form">
-                <button class="button submit-form__button">Submit</button>
-              </div>
-          </div>    
-          <div class="col-xl-3 form-right">
-              <div class="submit-form">
-                <input type="email" name="e-mail" value="" placeholder="Your Email" class="email-input">
-              </div>
-              <div class="submit-form">
-                <input type="tel" name="phone" value="" placeholder="Your Phone Number" class="phone-input">
-              </div>
-          </div>
-          <div class="col-xl-4 offset-xl-4">
-            
-          </div>
+        </div>
       </div>
     </section>
+
     <section class="brands">
       <div class="container">
         <div class="row justify-content-around brands-list">
@@ -258,18 +280,106 @@
         </div>
       </div>
     </section>
-              <!-- <div class="input-email">
-                <label for="write-email" class="write-popup__label">Ваш e-mail:</label>
-                <input type="email" id="write-email" name="e-mail" value=""   placeholder="email@example.com" class="popup-input popup-email_type_email">
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4">
+            <h3 class="footer__title">Contact Us</h3>
+            <ul class="contact-list">
+              <li class="contact-list__item">
+                <div class="contact-icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <p><span>+1 23 567 8596</span><br>Support 24/7 Weekdays</p>
+              </li>
+              <li class="contact-list__item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <p>Auhandy Tower, New York, NY 10013, USA</p>
+              </li>
+              <li class="contact-list__item">
+                <div class="contact-icon">
+                  <i class="far fa-envelope"></i>
+                </div>
+                <p>info@example.com</p>
+              </li>
+              <li class="contact-list__item">
+                <div class="contact-icon">
+                  <i class="far fa-clock"></i>
+                </div>
+                <p>Weekdays: 09:00am - 06:00pm</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-4">
+            <h3 class="footer__title">Our Services</h3>
+            <div class="row">
+              <div class="col-xl-6">
+                <ul class="services-list">
+                  <li class="services-list__item">
+                    <p>Electrical</p>
+                  </li>
+                  <li class="services-list__item">
+                    <p>Plumbing</p>
+                  </li>
+                  <li class="services-list__item">
+                    <p>Engine Repair</p>
+                  </li>
+                  <li class="services-list__item">
+                    <p>Repair House</p>
+                  </li>
+                  <li class="services-list__item">
+                    <p>Home Maintenance</p>
+                  </li>
+                  <li class="services-list__item">
+                    <p>Wall Paint</p>
+                  </li>
+                </ul>
               </div>
-              <div class="input-textarea">
-                <label for="write-text" class="write-popup__label">Текст письма:</label>
-                <textarea name="text-us" id="write-text" placeholder="В свободной форме" class="popup-input popup-textarea_type_textarea" ></textarea>
+              <div class="col-xl-6">
+                <ul class="services-list">
+                  <li class="services-list__item">
+                    <p>Installation</p>
+                  </li>
+                  <li class="services-list__item">
+                    <p>Garden Repairs</p>
+                  </li>
+                  <li class="services-list__item">
+                    <p>Soil Drilling</p>
+                  </li>
+                  <li class="services-list__item">
+                    <p>Support 24/7</p>
+                  </li>
+                  <li class="services-list__item">
+                    <p>Inspection House</p>
+                  </li>
+                  <li class="services-list__item">
+                    <p>Remodeling Ceiling</p>
+                  </li>
+                </ul>
               </div>
-              <button type="submit" class="write-btn btn">Отправить</button> -->
-            
-          
-        
+
+            </div>
+        </div>
+        <div class="col-xl-4">
+          <div class="offer">
+            <p class="offer__get">Get&ensp;<span>25%</span>&ensp;Off </p>
+            <p class="offer__services">Electrical Services</p>
+            <p>Redeem Code: <span class="offer__code">HANDYHPY28</span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <p class="copyright__text">Copyright © 2018 <span>Auhandy</span>. Get The Theme</p>
+          </div>
+        </div>
+      </div>
+    </section>    
         
 
 
@@ -277,7 +387,6 @@
 
 
     <script src="https://kit.fontawesome.com/cc9cb265c4.js" crossorigin="anonymous"></script>  
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
