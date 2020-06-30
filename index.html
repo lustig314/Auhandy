@@ -178,26 +178,26 @@
           </div>
           <div class="col-12">
             <ul class="projects-menu">
-              <li class="projects-menu__item projects-menu__item_select"><a href="#">All</a></li>
-              <li class="projects-menu__item"><a href="#">Engine Repair</a></li>
-              <li class="projects-menu__item"><a href="#">Electrical</a></li>
-              <li class="projects-menu__item"><a href="#">Plumbing</a></li>
-              <li class="projects-menu__item"><a href="#">Repair House</a></li>
-              <li class="projects-menu__item"><a href="#">Wall Paint</a></li>
+              <li class="projects-menu__item projects-menu__item_select"><button class="button-gallery" filter="all" val="on">All</button></li>
+              <li class="projects-menu__item"><button class="button-gallery" filter="er" val="off">Engine Repair</button></li>
+              <li class="projects-menu__item"><button class="button-gallery" filter="el" val="off">Electrical</button></li>
+              <li class="projects-menu__item"><button class="button-gallery" filter="pl" val="off">Plumbing</button></li>
+              <li class="projects-menu__item"><button class="button-gallery" filter="re" val="off">Repair House</button></li>
+              <li class="projects-menu__item"><button class="button-gallery" filter="wr" val="off">Wall Paint</button></li>
             </ul>
           </div>
         </div>
         <div class="row no-gutters projects__gallery">
-          <div class="col-xl-4 project__pic"></div>
-          <div class="col-xl-4 project__pic">
+          <div class="col-xl-4 project__pic" filter="er"></div>
+          <div class="col-xl-4 project__pic" filter="wr">
             <p class="projects__text">Pellentesque finibus maximus.</p>
             <p class="projects__descr">Repair House</p>
             <i class="fas fa-search"></i>
           </div>
-          <div class="col-xl-4 project__pic"></div>
-          <div class="col-xl-4 project__pic"></div>
-          <div class="col-xl-4 project__pic"></div>
-          <div class="col-xl-4 project__pic"></div>
+          <div class="col-xl-4 project__pic" filter="er"></div>
+          <div class="col-xl-4 project__pic" filter="pl"></div>
+          <div class="col-xl-4 project__pic" filter="el"></div>
+          <div class="col-xl-4 project__pic" filter="re"></div>
         </div>
         <div class="row justify-content-center">
           <div class="col-xl-3 d-flex flex-column align-items-center">
@@ -407,6 +407,7 @@
     <script src="https://kit.fontawesome.com/cc9cb265c4.js" crossorigin="anonymous"></script>  
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

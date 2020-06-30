@@ -388,14 +388,17 @@ input[type='radio'].visually-hidden {
   justify-content: center;
 }
 
-.projects-menu__item a{
+.projects-menu__item button{
   margin-left: 25px;
   text-transform: uppercase;
   color: #666666;
   font-weight: 700;
+  border: none;
+  background: none;
+  outline: none;
 }
 
-.projects-menu__item_select a{
+.button-gallery[val="on"] {
   color: #ffb619;
   cursor: default;
 }
