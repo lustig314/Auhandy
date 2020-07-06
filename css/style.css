@@ -726,16 +726,7 @@ input[type='radio'].visually-hidden {
     margin-left: 0;
   }
   
-  .menu-bar {
-    display: none;
-  }
-
-  .bars {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 30px;
-
-  }
+  
 
   .header__menu {
     padding-top: 10px;
@@ -773,6 +764,25 @@ input[type='radio'].visually-hidden {
 }
 
   @media screen and (max-width: 1024px) {
+
+    .menu-bar {
+      display: none;
+      position: absolute;
+      right: -225px;
+      top: 10px;
+      text-align: right;
+      background-color: #ffffff;
+      padding: 20px 20px;
+    }
+  
+    .bars {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 30px;
+      cursor: pointer;
+      position: relative;
+    }
+  
 
     .experience__title {
       margin-bottom: 20px;
